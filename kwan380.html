@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunedin Dairy</title>
+    <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ds/logo-192x192.png">
+    <link rel="stylesheet" href="kwan380.css">
+    <script defer src="kwan380.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="http://redsox.uoa.auckland.ac.nz/ds/logo.svg" alt="">
+        <div id="nav-group">
+            <div class="nav-img">
+                <div class="home-icon icon">&#127968;</div>
+            </div>
+            <div class="nav-img">
+                <div class="product-icon icon">&#128722;</div>
+            </div>
+            <div class="nav-img">
+                <div class="news-icon icon">&#128240;</div>
+            </div>
+            <div class="nav-img">
+                <div class="shopping-icon icon">&#128204;</div>
+            </div>
+            <div class="nav-img">
+                <div class="book-icon icon">&#128214;</div>
+            </div>
+            <div class="nav-img">
+                <div class="Sign-icon icon">&#x1F464;</div>
+            </div>
+
+        </div>
+    </header>
+    <div class="section" id="home-section">
+        <h1 class="title">Dunedin Dairy</h1>
+        <p class="introduction">Welcome to the Dunedin Dairy, the leading online dairy shop in New Zealand. We take pride in sourcing the best dairy products from within New Zealand and abroad. Our shop in open 24/7, and we strive to deliver your purchases promptly.
+            <hr> Keeping in mind the safety of you and our staff, our deliveries are contactless.</p>
+        <div id='home-img'><img src="https://www.rnz.co.nz/assets/galleries/59934/full_cow_4.jpg?1561080204" alt=""></div>
+    </div>
+    <div class="section" id="product-section">
+        <h1 class="title">Product</h1>
+        <input type="text">
+        <div id="products-list"></div>
+    </div>
+    <div class="section" id="news-section">
+        <h1 class="title">News</h1>
+        <div id="news-list"></div>
+    </div>
+    <div class="section" id="location-section">
+        <h1 class="title">Location</h1>
+        <img src="http://redsox.uoa.auckland.ac.nz/ds/map.png" width="auto" height="auto" max-width=100%>
+        <div class="map-info-section" style="background-color:beige">
+            <p align="center">535 Pine Hill Road Dunedin New Zealand</p>
+            <div class="map-info-left-section">
+                <a href=mailto:<nowiki>info@DunedinDairy.co.nz</a>
+            </div>
+            <div class="map-info-right-section">
+                <a href="tel:+64 3 448 6256">+64 3 448 6256</a>
+            </div>
+            <div class="map-info-add-addr">
+                <a href="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/vcard" Content-Type="text/vcard">Add to your address book</a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="book-section">
+        <h1 class="title">Guest Book</h1>
+        <p>Please sign our guest book.</p>
+        <div class="form">
+            <textarea name="" id="comment" cols="30" rows="8" placeholder="Your comments here" class="textarea"></textarea>
+            <div class="username">
+                <p>Your name:</p><input type="text" class="name" id="guestName" placeholder="Enter your name here">
+                <button class="button" id="commentBut">Submit</button>
+            </div>
+
+        </div>
+        <div class="show" id="showCom"></div>
+    </div>
+
+    <div class="section" id="signIn-section">
+
+        <div id="sign-in-container" style="display: none;">
+            <h1 class="title">Sign in</h1>
+            <p>Welcome to join us</p>
+            <div class="form">
+                <form id="register" class="register-form">
+                    <label for="uname"><b>Username</b></label>
+                    <em><p id="registerResponse" style="color: red;"></p></em>
+                    <input id="registerName" type="text" placeholder="Enter Username" name="Name" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input id="registerPsd" type="password" placeholder="Enter Password" name="Password" required>
+
+                    <label for="adr"><b>Address</b></label>
+                    <input id="registerAds" type="text" placeholder="Enter address" name="adr">
+
+                    <button type="submit" onclick="register()" class="register-btn">Register</button>
+                </form>
+                <p style="color:gray;">Already have an account?
+                    <a onclick="showLoginContainer()" style="color: blueviolet; cursor: pointer;">Log in now!</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="login-container" style="display: block;">
+            <h1 class="title">Log in</h1>
+            <input id="loginName" type="text" placeholder="Username" required/>
+            <input id="LoginPassword" type="password" placeholder="Password" required/>
+            <input class="register-btn" type="submit" value="Login" onclick="Login()" />
+            <p style="color:gray;">Don't have an account?
+                <a onclick="showSignInContainer()" style="color: blueviolet; cursor: pointer;">Please Sign in</a>
+            </p>
+
+
+        </div>
+
+    </div>
+
+    <div class="UserState">
+        <p>
+            <label for="logOut" id="UserloginName" style="display: none;"></label>
+            <a id="logOut" onclick="logOut()" style="display:none; cursor: pointer;">(Log out)</a>
+        </p>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: Gray;
+    cursor: pointer;
+}
+
+header {
+    padding: 10px 0 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header>#logo {
+    width: 120px;
+    height: 120px;
+}
+
+header>#nav-group {
+    height: 120px;
+    width: 70%;
+    float: right;
+}
+
+header>#nav-group>.nav-img {
+    float: left;
+    height: 120px;
+    width: 16%;
+    line-height: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header>#nav-group>.nav-img:hover {
+    background: gray;
+}
+
+header>#nav-group>.nav-img>.icon {
+    height: 120px;
+    width: 100%;
+    font-size: 200%;
+}
+
+.section {
+    margin: 0 auto;
+    height: 200px;
+    width: 80%;
+}
+
+.section>h1 {
+    width: 100%;
+}
+
+.section>h1>p {
+    text-align: right;
+    font-size: 12px;
+}
+
+.section {
+    margin: 0 auto;
+    height: 200px;
+    width: 80%;
+}
+
+.section>h1 {
+    width: 100%;
+}
+
+.section>h1>p {
+    text-align: right;
+    font-size: 12px;
+}
+
+#home-section>#home-img {
+    margin: 0 5%;
+}
+
+#home-section>#home-img>img {
+    width: 80%;
+}
+
+#home-section>p {
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+#product-section>input {
+    border: none;
+    height: 28px;
+    font-size: 24px;
+    line-height: 20px;
+    background: gray;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#product-section>input:focus {
+    border-color: gray;
+}
+
+#location-section>img {
+    /* height: 500px; */
+    width: 80%;
+    margin: 0 10%;
+}
+
+#book-section>p {
+    padding: 20px 0;
+}
+
+#book-section>.form {
+    padding: 20px;
+    border-radius: 12px;
+    background: gray;
+}
+
+#book-section>.form>.textarea {
+    border: none;
+    width: 100%;
+    height: 100px;
+}
+
+#book-section>.form>.username {
+    height: 26px;
+    font-size: 18px;
+    padding: 14px 0;
+    width: 100%;
+}
+
+#book-section>.form>.username>p {
+    width: 100px;
+    float: left;
+}
+
+#book-section>.form>.username>input {
+    height: 100%;
+    position: relative;
+    transform: translate(5%, 0);
+    width: 50%;
+}
+
+#book-section>.form>.username>button {
+    height: 110%;
+    font-size: 14px;
+    float: right;
+    width: 50px;
+}
+
+#book-section>.small-title {
+    font-size: 24px;
+    padding: 16px 0;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    header>#logo {
+        width: 30px;
+        height: 30px;
+    }
+    header>#nav-group {
+        height: 30px;
+        width: 70%;
+        float: right;
+    }
+    header>#nav-group>.nav-img {
+        padding-right: 10px;
+        float: left;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    header>#nav-group>.nav-img>.icon {
+        height: 30px;
+        width: 30px;
+        font-size: 200%;
+        line-height: 30px;
+        text-align: center;
+    }
+    #book-section>.form>.username {
+        height: 20px;
+        font-size: 12px;
+        padding: 14px 0;
+        width: 100%;
+    }
+    #book-section>.form>.username>button {
+        height: 110%;
+        font-size: 14px;
+        float: left;
+        width: 50px;
+    }
+}
+
+.map-info-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+.map-info-section p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.map-info-section a {
+    color: blue;
+}
+
+.map-info-add-addr {
+    text-align: center;
+}
+
+.map-info-left-section {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.map-info-right-section {
+    text-align: center;
+    margin-left: 50%;
+    width: 50%;
+}
+
+.news-image-div {
+    text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.register-btn {
+    width: 80%;
+    background-color: lightgray;
+    color: blue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.UserState {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+}

