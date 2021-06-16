@@ -1,2 +1,2 @@
-# Avril478.github.io
+
 Dunedin Dairy sells dairy products. You can order their products online. The shop uses a service-oriented architecture with a customer-facing UI front-end, and a service back-end  This project looks at the separation of data from the UI, and how such data can be consumed and used in the end-user application. You should also implement this user-registration facility and add a 'buy now' facility in the shop.
